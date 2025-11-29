@@ -1,13 +1,5 @@
-Here’s a polished **`README.md`** you can drop straight into your repo, updated with:
 
-* AI AED dispatch + guidance for cardiac arrest
-* 5th place at AVESHSAN 2025
-* Clear sections for hackathons / recruiters / GitHub
-
----
-
-````md
-# 🚑 SAHAYAK — AI AED Dispatch & Cardiac Arrest Guidance System
+ 🚑 SAHAYAK — AI AED Dispatch & Cardiac Arrest Guidance System
 
 SAHAYAK is an AI-powered emergency response platform that automatically identifies and dispatches the nearest available AED and guides bystanders through CPR and defibrillation during sudden cardiac arrest.
 
@@ -17,7 +9,7 @@ By combining real-time mapping, intelligent dispatch, and generative AI guidance
 
 ---
 
-## 💡 Core Idea
+💡 Core Idea
 
 Most cardiac arrest victims never receive timely CPR or defibrillation, even when AEDs are nearby. SAHAYAK turns bystanders into effective first responders by:
 
@@ -27,9 +19,9 @@ Most cardiac arrest victims never receive timely CPR or defibrillation, even whe
 
 ---
 
-## 🔑 Key Features
+ 🔑 Key Features
 
-### 1. Real-Time AED Fleet Management
+1. Real-Time AED Fleet Management
 - Live map of public-access AEDs using **MapLibre GL**
 - Status tracking for each AED:
   - `Operational`
@@ -37,7 +29,7 @@ Most cardiac arrest victims never receive timely CPR or defibrillation, even whe
   - `Maintenance Required`
 - Device-level details: battery level, last self-test, last usage.
 
-### 2. AI-Powered Incident Triage
+ 2. AI-Powered Incident Triage
 - Analyzes caller/incident descriptions using **Google Gemini** via **Genkit**
 - Classifies emergency type (e.g., *Cardiac Arrest*, *Chest Pain*, *Collapse Unconscious*)
 - Returns:
@@ -45,14 +37,14 @@ Most cardiac arrest victims never receive timely CPR or defibrillation, even whe
   - Confidence score
   - Suggested follow-up questions for the dispatcher
 
-### 3. Intelligent AED Dispatch System
+ 3. Intelligent AED Dispatch System
 - Automatically identifies the **nearest AED(s)** to the incident location
 - Calculates **routes and ETAs** in real time
 - Simulates responder/AED movement on the map:
   - Base → Incident → Hospital → Base
 - Special logic for complex scenarios (e.g., multi-victim / mass casualty events)
 
-### 4. Real-Time CPR & AED Guidance
+4. Real-Time CPR & AED Guidance
 - Generates **scenario-aware text + audio instructions** using TTS:
   - Hands-only CPR steps
   - Compression rate and depth prompts
@@ -62,7 +54,7 @@ Most cardiac arrest victims never receive timely CPR or defibrillation, even whe
   - Single rescuer vs multiple rescuers
 - Designed for **non-medical lay responders** under stress.
 
-### 5. AI-Driven Post-Incident Analysis
+5. AI-Driven Post-Incident Analysis
 - **AI Eyes**:
   - Analyzes event logs to estimate CPR quality:
     - Compression rate
@@ -77,7 +69,7 @@ Most cardiac arrest victims never receive timely CPR or defibrillation, even whe
   - QA review
   - Documentation
 
-### 6. Predictive Maintenance for AEDs
+6. Predictive Maintenance for AEDs
 - Monitors:
   - Device logs
   - Battery levels
@@ -89,7 +81,7 @@ Most cardiac arrest victims never receive timely CPR or defibrillation, even whe
 
 ---
 
-## 🧩 Tech Stack
+ 🧩 Tech Stack
 
 **Frontend**
 - [Next.js](https://nextjs.org/)
